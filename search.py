@@ -86,7 +86,7 @@ if __name__ == "__main__":
     execution = Engine(path=paths("geology", "marinegeology",
                                   "mineral", "highschoolearth",
                                   "geography", "pedology"))
-    #from geowords import terms_1008 as terms
+    #from geowords import terms_1014 as terms
     #sr = execution.multiple_search([i[0] for i in terms])
     #compare(terms, sr)
     execution.endless_mode()
