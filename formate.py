@@ -20,7 +20,18 @@ class Formation:
         print(s1)
         pyperclip.copy(s1) if copy else 0
 
+    @staticmethod
+    def input_to_list(copy=True):
+        con = True
+        result = []
+        while con:
+            s = str(input())
+            result.append(s.split()) if s == "eof" else con = False
+        print(result)
+        pyperclip.copy(str(result)) if copy else 0
+
 
 if __name__ == "__main__":
     f = Formation(word)
     f.markdown_table(["Terms", "Translation"])
+    # f.input_to_list()
