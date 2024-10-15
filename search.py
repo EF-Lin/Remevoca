@@ -2,7 +2,7 @@ import csv
 import rich
 import os
 from dataclasses import dataclass
-from timing import timer
+from devtool.timing import timer
 from datapath import paths
 
 

@@ -368,7 +368,7 @@ terms_1014 = [
     ["Confining pressure", "圍壓"],
     ["Contact metamorphism", "接觸變質作用"],
     ["Differential stress", "差異應力"],
-    ["Ductile (plastic)", "延展性(可塑性)"],
+    ["Ductile(plastic)", "延展性(可塑性)"],
     ["Foliation", "葉理"],
     ["Gneiss", "片麻岩"],
     ["Hornfels", "角頁岩"],
