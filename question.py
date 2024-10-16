@@ -58,6 +58,7 @@ class Question_generator:
             self.i = random.randint(0, self.len - 1)
             t += 1 if self.single_question() else 0
         rich.print(f"[green]{t}/{num}" if t/num >= 0.6 else f"[red]{t}/{num}\n")
+        self.i = old
 
 
 if __name__ == "__main__":
