@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 import pyperclip
-from geowords import terms_1014 as word
 
 
 @dataclass
@@ -32,6 +31,4 @@ class Formation:
 
 
 if __name__ == "__main__":
-    f = Formation(word)
-    f.markdown_table(["Terms", "Translation"])
-    # f.input_to_list()
+    pass

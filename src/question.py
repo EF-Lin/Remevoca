@@ -1,20 +1,17 @@
-from geowords import terms_1014 as words
 import random
 import rich
 from dataclasses import dataclass
 from search import Engine
-from datapath import paths
 
 
 @dataclass
 class Question_generator:
     data: list
+    path: list
 
     def __post_init__(self):
         self.len = len(self.data)
-        self.engine = Engine(paths("geology","marinegeology",
-                                   "mineral", "highschoolearth",
-                                   "geography", "pedology"))
+        self.engine = Engine(self.path)
 
     def check_input(self) -> bool:
         if self.ans.lower() == "eof":
@@ -62,5 +59,4 @@ class Question_generator:
 
 
 if __name__ == "__main__":
-    qq = Question_generator(words)
-    qq.default_random_mode()
+    pass

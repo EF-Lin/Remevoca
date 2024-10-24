@@ -2,8 +2,6 @@ import csv
 import rich
 import os
 from dataclasses import dataclass
-from devtool.timing import timer
-from datapath import paths
 
 
 @dataclass
@@ -82,11 +80,4 @@ def compare(a: list, b: list):
 
 
 if __name__ == "__main__":
-    timer()
-    execution = Engine(path=paths("geology", "marinegeology",
-                                  "mineral", "highschoolearth",
-                                  "geography", "pedology"))
-    #from geowords import terms_1014 as terms
-    #sr = execution.multiple_search([i[0] for i in terms])
-    #compare(terms, sr)
-    execution.endless_mode()
+    pass
