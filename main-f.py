@@ -1,5 +1,5 @@
 from src.formate import Formation
-from geowords import terms_1014 as word
+from dictionary import words as word
 
 
 f = Formation(word)

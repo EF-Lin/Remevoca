@@ -1,6 +1,6 @@
 from devtool.timing import timer
 from src.search import Engine
-from datapath import paths
+from data.datapath import paths
 
 timer()
 execution = Engine(path=paths("geology", "marinegeology",

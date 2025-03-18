@@ -1,8 +1,8 @@
-from geowords import terms_1014 as words
+from dictionary.words import words as word
 from src.question import Question_generator
-from datapath import paths
+from data.datapath import paths
 
-qq = Question_generator(data=words, path=paths("geology", "marinegeology",
+qg = Question_generator(data=word, path=paths("geology", "marinegeology",
                                                "mineral", "highschoolearth",
                                                "geography", "pedology", "astronomy"))
-qq.default_random_mode()
+qg.default_random_mode()
